@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import{ Switch, Route } from 'react-router-dom';
-import logo from './logo.svg';
+// import { connect } from 'react-redux';
 import Navbar from './Components/Navbar'
 import ProductList from './Components/ProductList'
 import Cart from './Components/Cart';
 import Details from './Components/Details';
-import EmptyState from './Components/EmptyState';
+// import EmptyState from './Components/EmptyState';
 import './App.css';
 
 class App extends Component {
@@ -16,9 +16,9 @@ class App extends Component {
 
         <Switch>
           <Route exact path='/' component={ProductList} />
-          <Route path='/details' component={Details} />
+          <Route path='/details/:product_id' component={Details} />
           <Route path='/cart' component={Cart} />
-          <Route component={EmptyState} />
+          {/* <Route component={EmptyState} /> */}
         </Switch>
       </div>
     );

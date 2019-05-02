@@ -1,0 +1,20 @@
+.title{
+    margin: 40px 0;
+}
+.product-card{
+    margin-bottom: 20px;
+}
+
+.product-image{
+    height: 80%;
+    width: auto;
+}
+
+.remove-item-btn{
+    color: #dc3545;
+    font-size: 20px;
+}
+.remove-item-btn:hover{
+    cursor: pointer;
+    color: #ce1f30;
+}
